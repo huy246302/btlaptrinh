@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - My Ecommerce Sport Shoes</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        header nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        header nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        header nav ul li a:hover {
+            color: #ffcc00;
+        }
+        footer {
+            margin-top: 50px;
+        }
+        .about-section {
+            padding: 50px 0;
+            text-align: center;
+        }
+        .about-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .about-section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header id="header"></header>
+    
+    <div class="about-section">
+        <div class="container">
+            <h2>Về chúng tôi</h2>
+            <p>Website buôn bán giày thể thao là một nền tảng trực tuyến cung cấp một loạt các sản phẩm giày thể thao từ các nhà sản xuất hàng đầu trên thị trường. Trang web cung cấp một trải nghiệm mua sắm thuận tiện và đa dạng cho người dùng, cho phép họ dễ dàng duyệt qua các danh mục sản phẩm, xem thông tin chi tiết và mua sắm theo nhu cầu của mình.</p>
+            <p>Người dùng có thể tìm thấy một loạt các loại giày thể thao từ các thương hiệu nổi tiếng, bao gồm giày chạy, giày đá bóng, giày đi bộ, giày tennis và nhiều loại khác. Mỗi sản phẩm được mô tả đầy đủ với các thông tin về kích thước, màu sắc, chất liệu và giá cả, giúp người dùng có thể chọn lựa sản phẩm phù hợp với nhu cầu và sở thích của họ.</p>
+            <p>Ngoài ra, trang web cung cấp các tính năng tiện ích như thanh toán trực tuyến an toàn thông qua các phương thức thanh toán phổ biến, giao hàng nhanh chóng và dịch vụ chăm sóc khách hàng chuyên nghiệp để đảm bảo sự hài lòng của người dùng.</p>
+            <p>Tóm lại, website buôn bán giày thể thao là một điểm đến lý tưởng cho những người yêu thích thể thao và đam mê thời trang, mang lại cho họ trải nghiệm mua sắm thuận tiện và đáng tin cậy.</p>
+        </div>
+    </div>
+
+    <footer id="footer"></footer>
+
+    <script>
+        // Fetch and insert header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header').innerHTML = html;
+            });
+
+        // Fetch and insert footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer').innerHTML = html;
+            });
+    </script>
+</body>
+</html>

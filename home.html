@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop bán giầy thể thao</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+<body>
+    <header id="header"></header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Chào mừng đến website shop bán giầy</h1>
+                <p>Khám phá những kiểu giày mới nhất của shop</p>
+                <a href="/index.html" class="btn">Shopping</a>
+            </div>
+        </section>
+
+        <section class="featured-products">
+            <div class="container">
+                <h2>Những sản phẩm nổi bật</h2>
+                <div class="owl-carousel owl-theme" id="product-carousel">
+                    <div class="item"><img src="product1.jpg" alt="Featured Product"></div>
+                    <div class="item"><img src="product2.jpg" alt="Featured Product"></div>
+                    <div class="item"><img src="product3.jpg" alt="Featured Product"></div>
+                    <!-- Add more product images as needed -->
+                </div>
+            </div>
+        </section>
+
+        <section class="about-us">
+            <div class="container">
+                <h2>Về chúng tôi</h2>
+                <p>Website buôn bán giày thể thao là một nền tảng trực tuyến cung cấp một loạt các sản phẩm giày thể thao từ các nhà sản xuất hàng đầu trên thị trường. Trang web cung cấp một trải nghiệm mua sắm thuận tiện và đa dạng cho người dùng, cho phép họ dễ dàng duyệt qua các danh mục sản phẩm, xem thông tin chi tiết và mua sắm theo nhu cầu của mình.</p>
+                <p>Ngoài ra, trang web cung cấp các tính năng tiện ích như thanh toán trực tuyến an toàn thông qua các phương thức thanh toán phổ biến, giao hàng nhanh chóng và dịch vụ chăm sóc khách hàng chuyên nghiệp để đảm bảo sự hài lòng của người dùng.</p>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <h2>Liện hệ chúng tôi</h2>
+                <p>Nếu bạn có câu hỏi gì thì liện hệ chúng tôi theo form dưới đây</p>
+                <form action="#" method="post">
+                    <input type="text" name="name" placeholder="Họ và tên" required><br>
+                    <input type="email" name="email" placeholder="Email của bạn" required><br>
+                    <textarea name="message" placeholder="Lời nhắn" required></textarea><br>
+                    <input type="submit" value="Gửi">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer"></footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#product-carousel").owlCarousel({
+                items: 3,
+                loop: true,
+                margin: 20,
+                autoplay: true,
+                autoplayHoverPause: true,
+                nav: true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:3
+                    },
+                    1000:{
+                        items:3
+                    }
+                }
+            });
+        });
+    </script>
+    <script>
+        // Fetch and insert header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header').innerHTML = html;
+            });
+
+        // Fetch and insert footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer').innerHTML = html;
+            });
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

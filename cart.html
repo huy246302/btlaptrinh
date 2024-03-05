@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .product-details {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .product-image {
+            flex: 0 0 40%;  
+            margin-right: 20px;
+        }
+        .product-info {
+            flex: 0 0 50%;
+        }
+        .product-info h2 {
+            margin-top: 0;
+        }
+        .product-info p {
+            margin: 10px 0;
+        }
+        .purchase-methods {
+            flex: 0 0 40%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .purchase-methods h3 {
+            margin-top: 0;
+        }
+        .purchase-methods ul {
+            padding: 0;
+            margin: 10px 0;
+            list-style-type: none;
+        }
+        .purchase-methods li {
+            margin-bottom: 5px;
+        }
+        .other-products {
+            margin-top: 40px;
+        }
+        .other-products h2 {
+            margin-top: 0;
+        }
+        .other-products .product {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .other-products .product img {
+            width: 100px;
+            margin-right: 20px;
+        }
+        .other-products .product-info {
+            flex-grow: 1;
+        }
+        .purchase-button {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header id="header"></header>
+
+    <div class="container">
+        <div class="product-details">
+            <div class="product-image">
+                <img src="product1.jpg" alt="Product Image" style="height: 100%;width: 100%;">
+            </div>
+            <div class="product-info">
+                <h2>Adidas UltraBoost</h2>
+                <p>Adidas UltraBoost là dòng sản phẩm giày thể thao cao cấp của hãng Adidas, được biết đến với sự kết hợp hoàn hảo giữa thiết kế đẹp mắt và công nghệ tiên tiến. Được ra mắt lần đầu vào năm 2015, UltraBoost nhanh chóng trở thành một trong những biểu tượng của thế giới thể thao và giày dép.
+
+                    Mỗi đôi giày Adidas UltraBoost được chế tạo với chất liệu Primeknit vô cùng linh hoạt, giúp ôm sát chân và tạo cảm giác thoải mái nhưng vẫn đảm bảo sự thoáng khí. Đặc biệt, công nghệ Boost được tích hợp trong đế giày giúp tăng cường độ co giãn và phản hồi năng lượng, mang lại trải nghiệm thoải mái và độ bền vượt trội trên mọi nền đất.
+                    
+                    Với thiết kế đa dạng và sự kết hợp của các tông màu tinh tế, Adidas UltraBoost không chỉ làm hài lòng các vận động viên chuyên nghiệp mà còn thu hút sự quan tâm của người tiêu dùng yêu thời trang. Cho dù bạn sử dụng chúng cho mục đích thể thao hay làm phụ kiện thời trang hàng ngày, Adidas UltraBoost luôn là lựa chọn hàng đầu.</p>
+                <p>Price: 100,000VND</p>
+                <button>Thêm vào giỏ hàng</button>
+            </div>
+            <div class="purchase-methods">
+                <h3>Phương thức thanh toán</h3>
+                <ul>
+                    <li><input type="radio" id="creditCard" name="purchaseMethod"> <label for="creditCard">Thẻ tín dụng</label></li>
+                    <li><input type="radio" id="paypal" name="purchaseMethod"> <label for="paypal">PayPal</label></li>
+                    <li><input type="radio" id="bankTransfer" name="purchaseMethod"> <label for="bankTransfer">Chuyển ngân hàng</label></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="purchase-button">
+            <button>Mua</button>
+        </div>
+
+        <div class="other-products">
+            <h2>Sản phẩm khác</h2>
+            <div class="product">
+                <div class="product-image">
+                    <img src="product2.jpg" alt="Product Image">
+                </div>
+                <div class="product-info">
+                    <h3>Nike Air Max</h3>
+                    <p>Price: 250,000VND</p>
+                    <button>Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="product3.jpg" alt="Product Image">
+                </div>
+                <div class="product-info">
+                    <h3>Under Armour Curry</h3>
+                    <p>Price: 900,000VND</p>
+                    <button>Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+            <!-- Add more products as needed -->
+        </div>
+    </div>
+
+    <footer id="footer"></footer>
+
+    <script>
+        // Fetch and insert header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header').innerHTML = html;
+            });
+
+        // Fetch and insert footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer').innerHTML = html;
+            });
+
+    </script>
+</body>
+</html>

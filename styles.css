@@ -1,0 +1,207 @@
+/* styles.css */
+
+/* Reset styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main Content */
+.main-content {
+    padding: 20px 0;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black;
+    text-align: center;
+    padding: 100px 0;
+    border-bottom: 1px solid #ddd; /* Border added */
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Featured Products Section */
+.featured-products {
+    background-color: #f4f4f4;
+    padding: 40px 0;
+    border-bottom: 1px solid #ddd; /* Border added */
+}
+
+.featured-products h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 60px 0;
+    border-bottom: 1px solid #ddd; /* Border added */
+}
+
+.about-us h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Contact Us Section */
+.contact {
+    padding: 60px 0;
+    border-bottom: 1px solid #ddd; /* Border added */
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Button */
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.login-register {
+    position: absolute;
+    top: 20px; /* Adjust the top position as needed */
+    right: 20px; /* Adjust the left position as needed */
+}
+
+.login-register a {
+    text-decoration: none;
+    color: #fff; /* Change the color to match your design */
+    margin-right: 10px; /* Add margin between login and register links */
+}
+
+.login-register a:last-child {
+    margin-right: 0; /* Remove margin from the last child (register link) */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px; /* Adjust padding as needed */
+    margin-bottom: 10px; /* Add margin between elements */
+}
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex-basis: 30%; /* Đảm bảo các phần tử cố định chiều rộng */
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.search-filter-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-filter-bar input[type="text"],
+.search-filter-bar select {
+    margin-right: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-filter-bar button {
+    padding: 8px 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-filter-bar button:hover {
+    background-color: #45a049;
+}
